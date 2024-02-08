@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!-- <div id="header"><h1>Header</h1></div> -->
+
+    <div id="root">Not rendered yet</div>
+    
+    <!-- <div id="footer"><h1>Footer</h1></div> -->
+
+    <!-- these are the CDN (content delivery networks) links that we are injecting in our program to run react -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script>
+        
+        const heading = React.createElement("h1",
+        {
+            id: "heading",className : "props" , style : {color : "red", backgroundColor : "yellow"}
+        },
+        "First React Program"); 
+            /* create Element took three arguments 1st is the name of element that we want to create 2nd is an object which can be empty(and here we will pass the properties like id , class , style) and 3rd argument is the content that we want to place inside our element   */
+
+        console.log(heading)        /* React.createElement gives us an object i.e., every react elements are an object  */
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));     /* Now we are going to manipulate the DOM so we create a root by using createRoot API and root become the main Root our our program and we will render heading inside of it */
+
+        root.render(heading);
+
+    </script>
+    
+</body>
+</html>

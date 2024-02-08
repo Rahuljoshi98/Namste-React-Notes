@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- suppose we want to create a structure like this :-
+
+        <div id="container">
+            <h1 id="heading1">Heading 1</h1>
+            <h2 id="heading2">Heading 2</h2>
+        </div>
+
+    -->
+
+    <div id="root">Not rendered yet</div>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+
+    <script>
+        
+        const heading1 = React.createElement("h1",
+        {
+            id : "heading1"
+        },"Heading 1");
+
+        const heading2 = React.createElement("h2",
+        {
+            id : "heading2"
+        },"Heading 2");
+
+        const container = React.createElement("div",
+        {
+            id : "container"
+        },[heading1,heading2]);      /*  If we want to add a group of elements inside our div then we have to pass it inside the array but if we only pass one element then there is no need to pass it inside the array */
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(container)
+
+    </script>
+</body>
+</html>
