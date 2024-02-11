@@ -29,13 +29,12 @@
 
 
 
-# Q7:- What is difference between react.development.js and react.production.js files via CDN?
+# Q7:- What is difference between react.development.js and react.production.js files via CDN? [(click here)](https://stackoverflow.com/questions/75791204/the-difference-between-react-development-js-and-react-production-js-files-via-cd#:~:text=In%20production%20mode%2C%20compression%20and,when%20compared%20to%20development%20mode.)
 
 
 
 
-
-# Q8:-  What is async and defer?
+# Q8:-  What is async and defer?  [(click here)](https://youtu.be/IrHmpdORLu8?feature=shared)
 
 
 
